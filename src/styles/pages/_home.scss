@@ -1,0 +1,28 @@
+.avatar {
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.typing-text {
+  font-size: 1.1rem;
+  color: $dark-grey;
+  margin-bottom: 1rem;
+  min-height: 80px;
+
+  .dropcap {
+    font-size: 4rem;
+    float: left;
+    line-height: 3.6rem;
+    padding-right: 5px;
+  }
+}
+
+.presentation {
+  &--focus {
+    display: inline-block;
+    padding: 40px 0 0;
+  }
+}

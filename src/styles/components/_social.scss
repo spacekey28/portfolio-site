@@ -1,0 +1,44 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    margin: 10px;
+  }
+  
+  i {
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+
+    &:focus,
+    &:hover {
+      color: rgba(#fff, 0.8);
+    }
+  }
+
+  .social-banner & {
+    justify-content: flex-end;
+
+    &__link {
+      margin: 5px;
+    }
+
+    i {
+      color: $primary-color;
+      transition: color 0.2s ease-in-out;
+  
+      &:focus,
+      &:hover {
+        color: lighten($primary-color,20%);
+      }
+    }
+  }
+}
+
+.social-banner {
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}

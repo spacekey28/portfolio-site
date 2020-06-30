@@ -1,0 +1,28 @@
+.btn-darkblue {
+  color: #fff;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-darkblue:hover, 
+.btn-darkblue:active, 
+.btn-darkblue:focus {
+  background-color: darken($secondary-color,10%);
+  border-color: darken($secondary-color,10%);
+}
+
+.btn-outline-darkblue {
+  color: $primary-color;
+  border-color: $primary-color;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-darkblue:hover, 
+.btn-outline-darkblue:active, 
+.btn-outline-darkblue:focus {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color;
+}

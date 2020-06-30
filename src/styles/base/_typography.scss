@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', 'Karla', sans-serif;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+h1 {
+  font-size: $mid-font-size;
+}
+
+h2 {
+  font-size: $mid-font-size*0.9;
+}
+
+h3 {
+  font-size: $mid-font-size*0.8;
+}
+
+h4 {
+  font-size: $mid-font-size*0.7;
+}
+
+h5 {
+  font-size: $mid-font-size*0.6;
+}
+
+h6 {
+  font-size: $mid-font-size*0.5;
+}
+
+p,
+a {
+  font-size: $default-font-size;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  color: $dark-grey;
+}
+
+a {
+  font-family: 'Lato', 'Karla', sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.page-heading-row {
+  margin-bottom: 50px;
+}
