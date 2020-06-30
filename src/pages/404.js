@@ -9,7 +9,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import "../styles/main.scss"
 
 export default () => {

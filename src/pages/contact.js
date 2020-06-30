@@ -4,6 +4,9 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Email from "../components/email";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/main.scss"
+
 export default function Contact() {
   return (
     <>

@@ -16,6 +16,9 @@ import imageWork4 from '../images/work/kiwiexperience-hub.jpg';
 import imageWork5 from '../images/work/experiencethl.jpg';
 import imageWork6 from '../images/work/mobile-dev.jpg';
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/main.scss"
+
 export default function Work() {
   return (
     <>
