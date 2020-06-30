@@ -25,6 +25,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`300`, `300i`, `400`, `400i`, `700`, `700i`]
+          },
+          {
+            family: `Karla`,
+            variants: [`300`, `300i`, `400`, `400i`, `700`, `700i`]
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://peteson.me',

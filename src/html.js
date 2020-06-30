@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from './utils/typography'
+// import { TypographyStyle, GoogleFont } from 'react-typography'
+// import typography from './utils/typography'
 
 export default function HTML(props) {
   return (
@@ -14,7 +14,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <GoogleFont typography={typography} />
+        {/* <GoogleFont typography={typography} /> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
