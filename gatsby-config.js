@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: 'https://peteson.me'
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
@@ -53,6 +54,12 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://peteson.me`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
