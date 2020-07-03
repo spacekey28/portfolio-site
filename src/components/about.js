@@ -26,10 +26,10 @@ export default function About(props) {
               </Typing>
             </div>
             <p className="site-desc">
-              This site was built with <strong>Node, Gatsby, React and Bootstrap</strong>.
+              This site was built with <strong>Node, Gatsby, React, and Bootstrap</strong>.
             </p>
             <p className="presentation">
-              My current languages/toolsets are <strong>HTML, CSS, SCCS, Javascript, jQuery, TypeScript, Handlebars, Keystone, MongoDB, Grunt, Gulp, Webpack, Swift and Java</strong>.<br/>
+              My current languages/toolsets are <strong>HTML, CSS, SCCS, Javascript, jQuery, TypeScript, Handlebars, Keystone, MongoDB, Grunt, Gulp, Webpack, Swift, and Java</strong>.<br/>
               <span className="presentation--focus">Interested in working together?</span>
             </p>
             <div className="mb-2">
