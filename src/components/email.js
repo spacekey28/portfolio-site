@@ -4,6 +4,8 @@ import Heading from '../components/heading';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 import imageContact from '../images/deepblue-mailbox.jpg';
 
@@ -24,9 +26,27 @@ export default function Email(props) {
           </Col>
           <Col sm={6} className="email-text">
             <h3>Drop me a mail</h3>
-            <p>
+            {/* <p>
               <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
-            </p>
+            </p> */}
+
+            <Form name="contact" netlify data-netlify="true">
+              <Form.Group controlId="formBasicName">
+                <Form.Control type="name" name="name" placeholder="Name" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicEmail">
+                <Form.Control type="email" name="email" placeholder="Email" />
+              </Form.Group>
+
+              <Form.Group controlId="contactForm.ControlTextarea">
+                <Form.Control as="textarea" rows="3" name="message" placeholder="Message" />
+              </Form.Group>
+
+              <Button variant="primary" type="submit">
+                Send
+              </Button>
+            </Form>
           </Col>
         </Row>
       </Container>
