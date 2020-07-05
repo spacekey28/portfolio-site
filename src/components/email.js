@@ -26,11 +26,11 @@ export default function Email(props) {
           </Col>
           <Col sm={6} className="email-text">
             <h3>Drop me a mail</h3>
-            {/* <p>
+            <p>
               <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
-            </p> */}
+            </p>
 
-            <Form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            {/* <Form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="formBasicName">
                 <Form.Control type="name" name="name" placeholder="Name" />
@@ -47,7 +47,7 @@ export default function Email(props) {
               <Button variant="primary" type="submit">
                 Send
               </Button>
-            </Form>
+            </Form> */}
           </Col>
         </Row>
       </Container>
