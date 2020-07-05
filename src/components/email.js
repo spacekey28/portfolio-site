@@ -30,7 +30,7 @@ export default function Email(props) {
               <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
             </p> */}
 
-            <Form name="contact" data-netlify="true">
+            <Form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
               <Form.Group controlId="formBasicName">
                 <Form.Control type="name" name="name" placeholder="Name" />
               </Form.Group>
@@ -42,7 +42,7 @@ export default function Email(props) {
               <Form.Group controlId="contactForm.ControlTextarea">
                 <Form.Control as="textarea" rows="3" name="message" placeholder="Message" />
               </Form.Group>
-
+              <div data-netlify-recaptcha="true"></div>
               <Button variant="primary" type="submit">
                 Send
               </Button>
