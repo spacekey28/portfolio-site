@@ -64,7 +64,6 @@ export default function Email(props) {
                   action="/thanks/"
                   data-netlify="true" 
                   netlify-honeypot="bot-field" 
-                  data-netlify-recaptcha="true" 
                   onSubmit={handleSubmit}>
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
@@ -79,7 +78,6 @@ export default function Email(props) {
               <Form.Group controlId="contactForm.ControlTextarea">
                 <Form.Control as="textarea" rows="3" name="message" placeholder="Message" onChange={handleChange} />
               </Form.Group>
-              <div data-netlify-recaptcha="true"></div>
               <Button variant="primary" type="submit">
                 Send
               </Button>
