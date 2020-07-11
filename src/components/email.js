@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
 import Heading from '../components/heading';
+import { navigate } from "gatsby";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -9,7 +10,35 @@ import Button from 'react-bootstrap/Button';
 
 import imageContact from '../images/deepblue-mailbox.jpg';
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 export default function Email(props) {
+
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+    .then(() => navigate(form.getAttribute('action')))
+    .catch((error) => alert(error))
+  }
+
   return (
     <section className="section-email">
       <Container className="container--narrow">
@@ -30,24 +59,30 @@ export default function Email(props) {
               <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
             </p>
 
-            {/* <Form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <Form name="contact" 
+                  method="POST" 
+                  action="/thanks/"
+                  data-netlify="true" 
+                  netlify-honeypot="bot-field" 
+                  onSubmit={handleSubmit}>
+              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="formBasicName">
-                <Form.Control type="name" name="name" placeholder="Name" />
+                <Form.Control type="name" name="name" placeholder="Name" onChange={handleChange} />
               </Form.Group>
 
               <Form.Group controlId="formBasicEmail">
-                <Form.Control type="email" name="email" placeholder="Email" />
+                <Form.Control type="email" name="email" placeholder="Email" onChange={handleChange} />
               </Form.Group>
 
               <Form.Group controlId="contactForm.ControlTextarea">
-                <Form.Control as="textarea" rows="3" name="message" placeholder="Message" />
+                <Form.Control as="textarea" rows="3" name="message" placeholder="Message" onChange={handleChange} />
               </Form.Group>
               <div data-netlify-recaptcha="true"></div>
               <Button variant="primary" type="submit">
                 Send
               </Button>
-            </Form> */}
+            </Form>
           </Col>
         </Row>
       </Container>
