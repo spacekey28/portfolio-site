@@ -19,7 +19,7 @@ export default function Footer(props) {
             <p className="footer__text">{props.footerText}</p>
             <div className="social-icons">
               <SocialLink linkUrl="https://www.linkedin.com/in/peter-son" iconName="linkedin" iconSize="2x" />
-              <SocialLink linkUrl="https://twitter.com/sukkison" iconName="twitter" iconSize="2x" />
+              <SocialLink linkUrl="https://twitter.com/spacekey28" iconName="twitter" iconSize="2x" />
               <SocialLink linkUrl="https://github.com/spacekey28" iconName="github" iconSize="2x" />
               <SocialLink linkUrl="mailto:peteson.me@gmail.com" iconName="envelope" iconSize="2x" />
             </div>
