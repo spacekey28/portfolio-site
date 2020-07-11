@@ -64,6 +64,7 @@ export default function Email(props) {
                   action="/thanks/"
                   data-netlify="true" 
                   netlify-honeypot="bot-field" 
+                  data-netlify-recaptcha="true" 
                   onSubmit={handleSubmit}>
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
