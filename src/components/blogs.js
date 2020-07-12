@@ -16,7 +16,7 @@ export default function Blogs(props) {
         </Row>
         <Row>
           <Col sm={6}>
-            <img src="http://placehold.it/300x400"
+            <img src="https://placehold.it/300x400"
                 className="blogs__thumb"
                 alt="Blog thumbnail " />
           </Col>
