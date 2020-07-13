@@ -78,7 +78,7 @@ export default function Email(props) {
               <Form.Group controlId="contactForm.ControlTextarea">
                 <Form.Control as="textarea" rows="3" name="message" placeholder="Message" onChange={handleChange} />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button type="submit" className="btn-darkblue" size="lg">
                 Send
               </Button>
             </Form>
