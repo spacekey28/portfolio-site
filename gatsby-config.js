@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require('dotenv').config({
+  path: `.env`,
+})
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -66,6 +70,16 @@ module.exports = {
       options: {
           trackingId: process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID,
           head: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: process.env.PRISMIC_REPOSITORY_NAME,
+        accessToken: process.env.PRISMIC_ACCESS_TOKEN,
+        schemas: {
+          article: require('./src/schemas/article.json'),
+        },
       },
     },
   ], 

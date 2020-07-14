@@ -11,21 +11,18 @@ export default function Blogs(props) {
       <Container className="container--narrow">
         <Row>
           <Col>
-            <Heading headingText="Blogs Page" />
+            <Heading headingText="Blog" />
           </Col>
         </Row>
         <Row>
           <Col sm={6}>
-            <img src="https://placehold.it/300x400"
+            <img src={props.data.image.url}
                 className="blogs__thumb"
-                alt="Blog thumbnail " />
+                alt={props.data.image.alt} />
           </Col>
           <Col sm={6} className="blogs__abstract">
-            <h3>Blog title</h3>
-
-            Quickly provide access to covalent meta-services without next-generation technology. 
-            Uniquely empower bricks-and-clicks niche markets vis-a-vis high-quality ideas. 
-            Efficiently simplify wireless e-markets for intermandated leadership skills.
+            <h3>{props.data.title.text}</h3>
+            {props.data.paragraph.text}
           </Col>
         </Row>
       </Container>

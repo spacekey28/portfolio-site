@@ -5,13 +5,13 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-export default function Blog(props) {
+export default function BlogPost(props) {
   return (
     <section className="section-blog">
       <Container className="container--narrow">
         <Row>
           <Col>
-            <Heading headingText="Blog Page" />
+            <Heading headingText="Blog Post Page" />
           </Col>
         </Row>
         <Row>
