@@ -11,7 +11,7 @@ export default function Blogs(props) {
       <Container className="container--narrow">
         <Row>
           <Col>
-            <Heading headingText="Blog Page" />
+            <Heading headingText="Blogs Page" />
           </Col>
         </Row>
         <Row>
