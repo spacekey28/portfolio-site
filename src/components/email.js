@@ -54,7 +54,7 @@ export default function Email(props) {
                 alt="contact thumbnail" />
           </Col>
           <Col sm={6} className="email-text">
-            <h3>Drop me a mail</h3>
+            <h3>Drop me an email</h3>
             <p>
               <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
             </p>
