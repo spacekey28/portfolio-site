@@ -25,7 +25,7 @@ export default function Post(props) {
       <Header />
       <BlogPost
           title={data.title.text}
-          image={data.image.url}
+          image={data.image}
           paragraph={data.paragraph.html}
         />
       <Footer
@@ -45,6 +45,7 @@ export const postQuery = graphql`
           text
         }
         image {
+          alt
           url
         }
         paragraph {

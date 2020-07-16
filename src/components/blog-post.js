@@ -11,9 +11,9 @@ export default function BlogPost(props) {
         <Row>
           <Col>
             <img
-              src={props.image}
+              src={props.image.url}
               className="blogs__image-top"
-              alt="Blog Top"
+              alt={props.image.alt}
             />
           </Col>
         </Row>
