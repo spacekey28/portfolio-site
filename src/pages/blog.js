@@ -26,7 +26,7 @@ export default function Blog(props) {
         <Container className="container--narrow">
           <Row>
               <Col>
-                <Heading headingText="Recent Blog" />
+                <Heading headingText="Recent blog" />
               </Col>
           </Row>
           {props.data.allPrismicArticle.edges.map(article => (

@@ -33,7 +33,7 @@ export default function Work() {
         <Container className="container--narrow">
           <Row>
             <Col>
-              <Heading headingText="My recent work" />
+              <Heading headingText="Recent work" />
             </Col>
           </Row>
           <Row>
