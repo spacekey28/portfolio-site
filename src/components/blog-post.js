@@ -1,5 +1,4 @@
 import React from "react"
-import Heading from "../components/heading"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -11,25 +10,17 @@ export default function BlogPost(props) {
       <Container className="container--narrow">
         <Row>
           <Col>
-            <Heading headingText="Blog Post Page" />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
             <img
-              src="https://placehold.it/800x400"
+              src={props.image}
               className="blogs__image-top"
-              alt="Blog Top Image "
+              alt="Blog Top"
             />
           </Col>
         </Row>
         <Row>
-          <Col>
-            <h3>Blog title</h3>
-            Quickly provide access to covalent meta-services without
-            next-generation technology. Uniquely empower bricks-and-clicks niche
-            markets vis-a-vis high-quality ideas. Efficiently simplify wireless
-            e-markets for intermandated leadership skills.
+          <Col className="blogs__post-content">
+            <h1>{props.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: props.paragraph }}/>
           </Col>
         </Row>
       </Container>

@@ -1,0 +1,14 @@
+.blogs {
+  &__image-top {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__post-content {
+    text-align: left;
+    
+    h1 {
+        padding-bottom: 1rem;
+    }
+  }
+}

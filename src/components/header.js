@@ -23,6 +23,9 @@ export default function Header(props) {
               <Nav.Link href="/work">
                 Work
               </Nav.Link>
+              <Nav.Link href="/blog">
+                Blog
+              </Nav.Link>
               <Nav.Link href="/contact">
                 Contact
               </Nav.Link>
