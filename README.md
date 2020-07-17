@@ -1,5 +1,5 @@
 # portfolio-site
-My portfolio site
+Portfolio Site
 https://peteson.me
 
 This site was built with Node, Gatsby, React and Bootstrap.
