@@ -45,8 +45,8 @@ export default function Work() {
                 linkUrl="https://www.greatnzmotorhomesale.com/"
                 imageUrl={imageWork5}
                 title="The Great New Zealand Motorhome Sale"
-                bodyText="Kicked off this landing microsite from scratch. Mobile-first approach sass structure. Curved fixed top navbar using clip-path. 
-                          Built interactive JS module called 'Find your module'. Integrated Marketo contact form code."
+                bodyText="Kicked off this landing microsite from scratch. Mobile-first approach styling. Curved fixed top navbar using clip-path. 
+                          Built interactive JS module called 'Find your motorhome'. Integrated Marketo contact form code."
                 toolset="SCSS, Javascript, Parcel"
               />
             </Col>
