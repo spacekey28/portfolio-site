@@ -47,7 +47,7 @@ export default function Work() {
                 title="The Great New Zealand Motorhome Sale"
                 bodyText="Kicked off this landing microsite from scratch. Mobile-first approach styling. Curved fixed top navbar using clip-path. 
                           Built interactive JS module called 'Find your motorhome'. Integrated Marketo contact form code."
-                toolset="SCSS, Javascript, Parcel"
+                toolset="SCSS, Javascript, AMP"
               />
             </Col>
             <Col sm={6} md={4}>
