@@ -15,6 +15,7 @@ import imageWork3 from "../images/work/waitomo.jpg"
 import imageWork4 from "../images/work/kiwiexperience-hub.jpg"
 import imageWork5 from "../images/work/gnzms.jpg"
 import imageWork6 from "../images/work/mobile-dev.jpg"
+import imageWork7 from "../images/work/ke-reviews.jpg"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/main.scss"
@@ -40,6 +41,15 @@ export default function Work() {
             </Col>
           </Row>
           <Row>
+            <Col sm={6} md={4}>
+              <WorkCard
+                linkUrl="https://www.kiwiexperience.com/about-kiwi-experience/customer-reviews"
+                imageUrl={imageWork7}
+                title="Review Migration"
+                bodyText="Recently migrated Kiwi Experience's review dataset. Over 4000 reviews with snapshot star ratings. Used pagination navigation with Keystone."
+                toolset="API, SCSS, Javascript"
+              />
+            </Col>
             <Col sm={6} md={4}>
               <WorkCard
                 linkUrl="https://www.greatnzmotorhomesale.com/"
