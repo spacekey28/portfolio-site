@@ -16,6 +16,7 @@ import imageWork4 from "../images/work/kiwiexperience-hub.jpg"
 import imageWork5 from "../images/work/gnzms.jpg"
 import imageWork6 from "../images/work/mobile-dev.jpg"
 import imageWork7 from "../images/work/ke-reviews.jpg"
+import imageWork8 from "../images/work/experiencethl.jpg"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/main.scss"
@@ -99,6 +100,14 @@ export default function Work() {
                                   Popup view, embedded video, and slick slider built with Bootstrap grid."
                 toolset="Keystone, Handlebars, jQuery"
               />
+            </Col>
+            <Col sm={6} md={4}>
+              <WorkCard linkUrl="https://experiencethl.com/" 
+                imageUrl={imageWork8} 
+                title="Connect Customer Brands" 
+                bodyText="Created a one-page HTML document for Experience thl. Responsive layouts with Bootstrap grid. 
+                          Injected ugly CSS and JS code files. Integrated Marketo subscription code." 
+                toolset="SCSS, Javascript, Bootstrap"/>
             </Col>
             <Col sm={6} md={4}>
               <WorkCard
