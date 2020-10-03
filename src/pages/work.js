@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -21,7 +22,7 @@ import imageWork8 from "../images/work/experiencethl.jpg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/main.scss"
 
-export default function Work() {
+export default function Work(props) {
   return (
     <>
       <Helmet>
@@ -128,3 +129,9 @@ export default function Work() {
     </>
   )
 }
+
+// export const WorkQuery = graphql`
+//   query Works {
+
+//   }
+// `
