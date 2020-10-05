@@ -63,7 +63,7 @@ export default function Work(props) {
 
 export const WorkQuery = graphql`
   query Works {
-    allPrismicWork(sort: {order: DESC, fields: first_publication_date}) {
+    allPrismicWork(sort: {order: DESC, fields: last_publication_date}) {
       edges {
         node {
           data {
