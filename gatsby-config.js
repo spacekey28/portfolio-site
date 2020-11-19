@@ -31,18 +31,13 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Lato`,
-            variants: [`300`, `300i`, `400`, `400i`, `700`, `700i`]
-          },
-          {
-            family: `Karla`,
-            variants: [`300`, `300i`, `400`, `400i`, `700`, `700i`]
-          },
+          `Lato\:300,300i,400,400i,700,700i`,
+          `Karla\:300,300i,400,400i,700,700i`
         ],
+        display: 'swap'
       },
     },
     {
