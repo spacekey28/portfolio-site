@@ -21,6 +21,7 @@ export default function Footer(props) {
               <Social linkUrl="https://www.linkedin.com/in/peter-son" iconName="linkedin" iconSize="2x" />
               <Social linkUrl="https://twitter.com/spacekey28" iconName="twitter" iconSize="2x" />
               <Social linkUrl="https://github.com/spacekey28" iconName="github" iconSize="2x" />
+              <Social linkUrl="https://sonpeter.medium.com" iconName="medium" iconSize="2x" />
               <Social linkUrl="mailto:peteson.me@gmail.com" iconName="envelope" iconSize="2x" />
             </div>
             <p className="copyright">{props.footerCopy}</p>
