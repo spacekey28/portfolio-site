@@ -18,11 +18,11 @@ export default function Footer(props) {
             </Link>
             <p className="footer__text">{props.footerText}</p>
             <div className="social-icons">
-              <Social linkUrl="https://www.linkedin.com/in/peter-son" iconName="linkedin" iconSize="2x" />
-              <Social linkUrl="https://twitter.com/spacekey28" iconName="twitter" iconSize="2x" />
-              <Social linkUrl="https://github.com/spacekey28" iconName="github" iconSize="2x" />
-              <Social linkUrl="https://sonpeter.medium.com" iconName="medium" iconSize="2x" />
-              <Social linkUrl="mailto:peteson.me@gmail.com" iconName="envelope" iconSize="2x" />
+              <Social linkUrl="https://www.linkedin.com/in/peter-son" iconType="fab" iconName="linkedin" iconSize="2x" />
+              <Social linkUrl="https://twitter.com/spacekey28" iconType="fab" iconName="twitter-square" iconSize="2x" />
+              <Social linkUrl="https://github.com/spacekey28" iconType="fab" iconName="github-square" iconSize="2x" />
+              <Social linkUrl="https://sonpeter.medium.com" iconType="fab" iconName="medium" iconSize="2x" />
+              <Social linkUrl="mailto:peteson.me@gmail.com" iconType="fas" iconName="envelope-square" iconSize="2x" />
             </div>
             <p className="copyright">{props.footerCopy}</p>
           </Col>
