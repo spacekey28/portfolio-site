@@ -26,7 +26,7 @@ export default function About(props) {
               </Typing>
             </div>
             <p className="site-desc">
-              This site was built with <strong>Node, Gatsby, React, and Bootstrap</strong>.
+              This site was built with <strong>Node, Gatsby, React, GraphQL, Prismic and Bootstrap</strong>.
             </p>
             <p className="presentation">
               My current languages/toolsets are <strong>HTML, CSS, SCCS, Javascript, jQuery, TypeScript, Handlebars, Keystone, MongoDB, Grunt, Gulp, NPM scripts, Webpack, Swift, and Java</strong>.<br/>
