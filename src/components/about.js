@@ -16,7 +16,8 @@ export default function About(props) {
           <Col sm={6} md={4}>
             <img src={imageAvatar}
                 className="avatar"
-                alt="About Avatar" />
+                alt="About Avatar"
+                loading="lazy" />
           </Col>
           <Col sm={6} md={8} className="about-text">
             <div className="typing-text">
