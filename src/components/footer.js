@@ -14,7 +14,7 @@ export default function Footer(props) {
         <Row>
           <Col>
             <Link className="footer__link" to='/'>
-              <img className="footer__logo" src={imageLogo} alt="peteson.me footer logo" />
+              <img className="footer__logo" src={imageLogo} alt="peteson.me footer logo" loading="lazy" />
             </Link>
             <p className="footer__text">{props.footerText}</p>
             <div className="social-icons">

@@ -15,7 +15,8 @@ export default function Header(props) {
           <Navbar.Brand href="/">
             <img className="brand-logo"
                   src={imageLogo} 
-                  alt="peteson.me logo"/>
+                  alt="peteson.me logo"
+                  loading="lazy"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

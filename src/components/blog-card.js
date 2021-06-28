@@ -11,7 +11,8 @@ export default function BlogCard(props) {
         <Link to={`/blog/${props.slug}`} className="blogs__image-link">
           <img src={props.data.image.url}
               className="blogs__image"
-              alt={props.data.image.alt} />
+              alt={props.data.image.alt}
+              loading="lazy" />
         </Link>
       </Col>
       <Col sm={6} className="blogs__abstract">

@@ -51,7 +51,8 @@ export default function Email(props) {
           <Col sm={6}>
             <img src={imageContact}
                 className="contact-thumb"
-                alt="contact thumbnail" />
+                alt="contact thumbnail"
+                loading="lazy" />
           </Col>
           <Col sm={6} className="email-text">
             <h3>Drop me an email</h3>

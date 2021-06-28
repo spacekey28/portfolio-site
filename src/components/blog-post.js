@@ -14,6 +14,7 @@ export default function BlogPost(props) {
               src={props.image.url}
               className="blogs__image-top"
               alt={props.image.alt}
+              loading="lazy"
             />
           </Col>
         </Row>
