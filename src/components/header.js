@@ -9,7 +9,7 @@ import imageLogo from '../images/peteson-logo.png';
 
 export default function Header(props) {
   return (
-    <nav className="header clearfix sticky-top">
+    <nav className="header">
       <Container className="header__container">
         <Navbar expand="lg">
           <Navbar.Brand href="/">

@@ -1,9 +1,16 @@
 .header {
   background-color: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   
   &__container {
     position: relative;
     overflow: visible;
+  }
+}
+.shadow {
+  &--on {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  &--off {
+    box-shadow: none;
   }
 }
