@@ -35,7 +35,7 @@ export default function Thanks() {
           </Row>
         </Container>
       </section>
-      <Footer footerText="Being a student for life." footerCopy="© 2020 peteson.me" />
+      <Footer footerText="Being a student for life." footerCopy="© 2021 peteson.me" />
     </>
   )
 }

@@ -55,7 +55,7 @@ export default function Work(props) {
       </section>
       <Footer
         footerText="Being a student for life."
-        footerCopy="© 2020 peteson.me"
+        footerCopy="© 2021 peteson.me"
       />
     </>
   )
