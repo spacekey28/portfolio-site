@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function BlogCard(props) {
   return (
-    <Row>
+    <Row className="blog-card">
       <Col sm={6}>
         <Link to={`/blog/${props.slug}`} className="blogs__image-link">
           <img src={props.data.image.url}

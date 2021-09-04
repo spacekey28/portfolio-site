@@ -52,21 +52,21 @@ export default function Work(props) {
             </Col>
           </Row>
           <Row>
-            {props.data.allPrismicWork.edges
-              // .sort((a, b) => (a.node.first_publication_date < b.node.first_publication_date))
-              .map(work => (
-              <Col sm={6} md={4} key={work.node.prismicId}>
-                <WorkCard
-                  imageUrl={work.node.data.preview.url}
-                  title={work.node.data.title.text}
-                  bodyText={work.node.data.description.text}
-                  toolset={work.node.data.stack.text}
-                  linkUrl={work.node.data.link.url}
-                />
-                <p>{work.node.first_publication_date}</p>
-              </Col>
-            ))}
-            
+            <Col sm={12}>
+              {props.data.allPrismicWork.edges
+                .map(work => (
+                  <>
+                    <WorkCard
+                      key={work.node.prismicId}
+                      imageUrl={work.node.data.preview.url}
+                      title={work.node.data.title.text}
+                      bodyText={work.node.data.description.text}
+                      toolset={work.node.data.stack.text}
+                      linkUrl={work.node.data.link.url}
+                    />
+                  </>
+              ))}
+            </Col>
           </Row>
         </Container>
       </section>

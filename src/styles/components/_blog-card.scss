@@ -21,3 +21,15 @@
     margin-bottom: 2rem;
   }
 }
+
+.blog-card {
+  text-align: left;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row;
+  }
+}
