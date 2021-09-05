@@ -11,7 +11,8 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/main.scss"
 
-export default () => {
+
+const _404 = () => {
   const [isSticky, setSticky] = useState(false);
   const ref = useRef(null);
   const handleScroll = () => {
@@ -56,3 +57,5 @@ export default () => {
     </>
   )
 }
+
+export default _404;
