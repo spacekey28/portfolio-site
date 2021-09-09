@@ -41,6 +41,7 @@
     "typography-theme-funston": "^0.16.19"
   },
   "devDependencies": {
+    "@netlify/plugin-gatsby": "^1.0.3",
     "prettier": "2.0.5"
   },
   "repository": {
