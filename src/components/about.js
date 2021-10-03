@@ -30,7 +30,7 @@ export default function About(props) {
               This site was built with <strong>Node, Gatsby, React, GraphQL, Prismic and Bootstrap</strong>.
             </p>
             <p className="presentation">
-              My current languages/toolsets are <strong>HTML, CSS, SCCS, Javascript, jQuery, TypeScript, Handlebars, Keystone, MongoDB, Grunt, Gulp, NPM scripts, Webpack, Swift, and Java</strong>.<br/>
+              My current languages/toolsets are <strong>HTML, CSS, SASS, Javascript, jQuery, TypeScript, Handlebars, Keystone, MongoDB, Grunt, Gulp, NPM scripts, Webpack, Objective-C, and Java</strong>.<br/>
               <span className="presentation--focus">Interested in working together?</span>
             </p>
             <div className="mb-2">
